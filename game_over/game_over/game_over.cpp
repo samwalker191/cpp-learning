@@ -1,22 +1,39 @@
-// game_over.cpp : This file contains the 'main' function. Program execution begins and ends there.
 // Game Over
 // A first C++ program
 
-#include <iostream>
+// pre processor directive. Signified by the # symbol
+// this tells the pre processor to include content from iostream file.
+// iostream is part of standard library. Used to help display output
+// #include <iostream>
 
-int main()
+// all C++ programs need a main(). This is the starting point of the program.
+/* int main() // int indicates this function will return an integer
 {
     std::cout << "Game Over!\n";
     return 0;
+} */
+
+// Game Over 2.0
+// Shows a using directive
+
+/* #include <iostream>
+using namespace std; // gives direct access to elements in the std namespace
+
+int main() 
+{
+    cout << "Game Over" << endl;
+    return 0;
+} */
+
+// Game Over 3.0
+// shows using declarations
+
+#include <iostream>
+using std::cout; // declares exactly which elements from std namespace I want. So I can access them directly
+using std::endl;
+
+int main()
+{
+    cout << "Game Over!" << endl;
+    return 0;
 }
-
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
