@@ -1,5 +1,5 @@
 // Score Rater
-// demonstrates if statements
+// demonstrates if, else statements
 
 #include <iostream>
 using std::cout;
@@ -22,23 +22,20 @@ int main()
 	cout << "Please enter a number: ";
 	cin >> score;
 
-	if (score) {
-		cout << "Atleast you didn't score zero.\n\n";
+	if (score >= 1000) {
+		cout << "You scored at least 1000. Impressive!\n";
 	}
-
-	if (score >= 250)
+	else if (score >= 500)
 	{
-		cout << "You scored 250 or more. Decent.\n\n";
+		cout << "You scored 500 or more. Nice.\n";
 	}
-
-	if (score >= 500)
+	else if (score >= 250)
 	{
-		cout << "You scored 500 or more. Nice.\n\n";
-
-		if (score >= 1000)
-		{
-			cout << "You scored 1000 or more. Impressive.\n\n";
-		}
+		cout << "You scored 250 or more. Decent.\n";
+	}
+	else
+	{
+		cout << "You scored less than 250. Nothing to brag about.\n";
 	}
 
 	return 0;
