@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "hangman", "hangman\hangman.vcxproj", "{4E1A17CB-230A-4837-9A96-E1C938902717}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4E1A17CB-230A-4837-9A96-E1C938902717}.Debug|x64.ActiveCfg = Debug|x64
+		{4E1A17CB-230A-4837-9A96-E1C938902717}.Debug|x64.Build.0 = Debug|x64
+		{4E1A17CB-230A-4837-9A96-E1C938902717}.Debug|x86.ActiveCfg = Debug|Win32
+		{4E1A17CB-230A-4837-9A96-E1C938902717}.Debug|x86.Build.0 = Debug|Win32
+		{4E1A17CB-230A-4837-9A96-E1C938902717}.Release|x64.ActiveCfg = Release|x64
+		{4E1A17CB-230A-4837-9A96-E1C938902717}.Release|x64.Build.0 = Release|x64
+		{4E1A17CB-230A-4837-9A96-E1C938902717}.Release|x86.ActiveCfg = Release|Win32
+		{4E1A17CB-230A-4837-9A96-E1C938902717}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4AE1772C-0CD0-4AEA-923C-0C5C93D0FB9B}
+	EndGlobalSection
+EndGlobal
