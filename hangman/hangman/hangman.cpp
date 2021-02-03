@@ -59,11 +59,12 @@ int main()
 
 	std::cout << "Welcome to Hangman. Good luck!\n";
 
-	while ((wrong < MAX_WRONG) || (soFar != SECRET_WORD))
+	while ((wrong < MAX_WRONG) && (soFar != SECRET_WORD))
 	{
-		cout << "You have " << (MAX_WRONG - wrong) << "remaining guesses.\n\n";
+		system("CLS");
+		cout << "You have " << (MAX_WRONG - wrong) << " remaining guesses.\n\n";
 		cout << "You have used the following letters:\n";
-		for (int i = 0; i < used.size(); i++)
+		for (int i = 0; i < used.length(); i++)
 		{
 			cout << used[i] << " ";
 		}
@@ -77,5 +78,38 @@ int main()
 		cin >> guess;
 		guess = toupper(guess);
 
+		while (used.find(guess) != string::npos)
+		{
+			cout << "You have already guessed that letter. Please enter another guess: \n";
+			cin >> guess;
+			guess = toupper(guess);
+		}
+
+		used += guess;
+
+		if (SECRET_WORD.find(guess) != string::npos)
+		{
+			cout << "That is a correct guess!\n";
+			for (int i = 0; i < SECRET_WORD.length(); i++)
+			{
+				if (SECRET_WORD[i] == guess)
+				{
+					soFar[i] = guess;
+				}
+			}
+		}
+		else
+		{
+			cout << "That is not a correct guess!\n";
+			wrong++;
+		}
+	}
+
+	if (wrong >= MAX_WRONG)
+	{
+		cout << "\nSorry! You have made too many incorrect guesses.\n";
+	}
+	else {
+		cout << "\nCongrats! You guessed the word!\n";
 	}
 }
