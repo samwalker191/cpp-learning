@@ -112,4 +112,6 @@ int main()
 	else {
 		cout << "\nCongrats! You guessed the word!\n";
 	}
+
+	return 0;
 }
