@@ -11,7 +11,7 @@ private:
 public:
 	Person();
 	Person(string newName) { name = newName; age = 0; };
-	Person(string newName, int newAge) { name = newName; age = newAge; };
+	Person(string name, int age);
 	string toString();
 };
 
