@@ -6,6 +6,7 @@ using namespace std;
 Cat::Cat() {
 	cout << "Cat created..." << endl;
 	happy = true;
+	name = "Bob";
 }
 
 Cat::~Cat() {
@@ -15,14 +16,18 @@ Cat::~Cat() {
 void Cat::speak()
 {
 	if (happy) {
-		cout << "Meow" << endl;
+		cout << "Meow, I am " << name << endl;
 	}
 	else {
-		cout << "Rawr" << endl;
+		cout << "Rawr, I am " << name << endl;
 	}
 }
 
 void Cat::changeMood(bool mood)
 {
 	happy = mood;
+}
+
+string Cat::toString() {
+	return "The cat is named " + name;
 }
