@@ -2,9 +2,11 @@
 class Cat
 {
 private:
-	bool happy = true;
+	bool happy;
 
 public:
+	Cat(); // constructor
+	~Cat(); // destructor
 	void speak();
 	void changeMood(bool mood);
 };
