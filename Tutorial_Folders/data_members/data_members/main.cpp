@@ -5,13 +5,12 @@ using namespace std;
 
 int main() 
 {
-	Cat cat;
-	cat.speak();
+	Cat* pCat = new Cat();
+	pCat->speak();
 
-	cout << cat.toString() << endl;
-
-	cat.changeMood(false);
-	cat.speak();
+	pCat->changeMood(false);
+	pCat->speak();
+	delete pCat;
 
 	return 0;
 }
