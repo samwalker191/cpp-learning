@@ -28,6 +28,10 @@ void Cat::changeMood(bool mood)
 	happy = mood;
 }
 
+void Cat::setName(string name) {
+	this->name = name;
+}
+
 string Cat::toString() {
 	return "The cat is named " + name;
 }
